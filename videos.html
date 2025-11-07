@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos | BlueTube</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body onload="loadTrending()">
+  <header>
+    <div class="logo">BlueTube</div>
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search videos..." />
+      <button onclick="searchVideos()">🔍</button>
+    </div>
+    <div class="user-info">
+      <button onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <a href="home.html">🏠</a>
+    <a href="videos.html" style="color:#00b3ff">📺</a>
+    <a href="short.html">🎬</a>
+  </aside>
+
+  <main class="main">
+    <h2>Popular Videos</h2>
+    <div id="videos" class="videos"></div>
+  </main>
+</body>
+</html>
