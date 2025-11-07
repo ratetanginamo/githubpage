@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shorts | BlueTube</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    .shorts-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      margin-top: 80px;
+    }
+
+    .short {
+      width: 320px;
+      height: 560px;
+      background: #181818;
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .short img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body onload="loadTrending()">
+  <header>
+    <div class="logo">BlueTube</div>
+    <div class="user-info"><button onclick="logout()">Logout</button></div>
+  </header>
+
+  <aside class="sidebar">
+    <a href="home.html">🏠</a>
+    <a href="videos.html">📺</a>
+    <a href="short.html" style="color:#00b3ff">🎬</a>
+  </aside>
+
+  <main class="main">
+    <div id="videos" class="shorts-container"></div>
+  </main>
+</body>
+</html>
